@@ -7,32 +7,41 @@
   </head>
   <link rel="stylesheet" href="src/style.css" />
   <body>
-    <header>
-      <nav></nav>
-      <h1>Family World Clock</h1>
-    </header>
-    <main>
-      <select name="" id="">
-        <option value="">Sydney</option>
-        <option value="">Brisbane</option>
-        <option value="">Perth</option>
-        <option value="">Adelaid</option>
-        <option value="">Melbourn</option>
-        <option value="">Darwin</option>
-      </select>
+    <div class="container">
+      <header>
+        <nav></nav>
+        <h1>Family World Clock</h1>
+      </header>
+      <main>
+        <select name="" id="selectedCities">
+          <option value="">Sydney</option>
+          <option value="">Brisbane</option>
+          <option value="">Perth</option>
+          <option value="">Adelaid</option>
+          <option value="">Melbourn</option>
+          <option value="">Darwin</option>
+        </select>
 
-      <div>
-        <h2>Bunbury WA</h2>
-        <div>date</div>
-        <div>time</div>
-        <h2>Halifax QLD</h2>
-        <div>date</div>
-        <div>time</div>
-        <h2>Charlotte NC</h2>
-        <div>date</div>
-        <div>time</div>
-      </div>
-    </main>
+        <div class="cities">
+          <div class="city">
+            <h2>Bunbury WA</h2>
+            <div class="date">Thursday 6 July 2026</div>
+            <div class="time">12:44:55 <small>am</small></div>
+          </div>
+          <div class="city">
+            <h2>Halifax QLD</h2>
+            <div class="date">Thursday 6 July 2026</div>
+            <div class="time">12:44:55 <small>am</small></div>
+          </div>
+
+          <div class="city">
+            <h2>Charlotte NC</h2>
+            <div class="date">Thursday 6 July 2026</div>
+            <div class="time">12:44:55 <small>am</small></div>
+          </div>
+        </div>
+      </main>
+    </div>
     <footer>
       <p>
         This project was coded by
