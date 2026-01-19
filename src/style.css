@@ -8,7 +8,7 @@ h1 {
   color: #719192;
   text-align: center;
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 46px;
 }
 h2 {
   margin: 0 0 5px;
@@ -37,7 +37,7 @@ select {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 10px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 .city:last-child {
@@ -45,6 +45,8 @@ select {
 }
 .date {
   opacity: 0.7;
+  margin-top: 15px;
+  font-size: 12px;
 }
 .time {
   font-size: 48px;
@@ -59,4 +61,7 @@ footer {
   text-align: center;
   font-size: 18px;
   color: #dfcdc3;
+}
+a {
+  color: #719192;
 }

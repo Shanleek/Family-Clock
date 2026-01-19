@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-10-year-range.js"></script>
+
     <title>Family Clock</title>
   </head>
-  <link rel="stylesheet" href="src/style.css" />
   <body>
     <div class="container">
       <header>
@@ -17,27 +21,32 @@
           <option value="">Sydney</option>
           <option value="">Brisbane</option>
           <option value="">Perth</option>
-          <option value="">Adelaid</option>
-          <option value="">Melbourn</option>
+          <option value="">Adelaide</option>
+          <option value="">Melbourne</option>
           <option value="">Darwin</option>
         </select>
 
         <div class="cities">
-          <div class="city">
-            <h2>Bunbury WA</h2>
-            <div class="date">Thursday 6 July 2026</div>
-            <div class="time">12:44:55 <small>am</small></div>
+          <div class="city" id="bunbury">
+            <h2>🇦🇺Bunbury WA</h2>
+            <div class="date"></div>
+            <div class="time"></div>
           </div>
-          <div class="city">
-            <h2>Halifax QLD</h2>
-            <div class="date">Thursday 6 July 2026</div>
-            <div class="time">12:44:55 <small>am</small></div>
+          <div class="city" id="halifax">
+            <h2>🇦🇺Halifax QLD</h2>
+            <div class="date"></div>
+            <div class="time"></div>
           </div>
 
-          <div class="city">
-            <h2>Charlotte NC</h2>
-            <div class="date">Thursday 6 July 2026</div>
-            <div class="time">12:44:55 <small>am</small></div>
+          <div class="city" id="charlotte">
+            <h2>🇺🇸Charlotte NC</h2>
+            <div class="date"></div>
+            <div class="time"></div>
+          </div>
+          <div class="city" id="sanJuan">
+            <h2>🇵🇷San Juan PR</h2>
+            <div class="date"></div>
+            <div class="time"></div>
           </div>
         </div>
       </main>
