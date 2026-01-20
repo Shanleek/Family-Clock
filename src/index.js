@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateTime() {
     //Bunbury
-    let bunburyElement = document.querySelector("#bunbury");
-    let bunburyDateElement = bunburyElement.querySelector(".date");
-    let bunburyTimeElement = bunburyElement.querySelector(".time");
+    let rockinghamElement = document.querySelector("#rockingham");
+    let rockinghamDateElement = rockinghamElement.querySelector(".date");
+    let rockinghamTimeElement = rockinghamElement.querySelector(".time");
 
-    let bunburyTime = moment().tz("Australia/Perth");
+    let rockinghamTime = moment().tz("Australia/Perth");
 
-    bunburyDateElement.innerHTML = moment().format("MMMM Do YYYY");
-    bunburyTimeElement.innerHTML = bunburyTime.format(
+    rockinghamDateElement.innerHTML = moment().format("MMMM Do YYYY");
+    rockinghamTimeElement.innerHTML = rockinghamTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
 
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector(".cities");
-    citiesElement.innerHTML += `
+    citiesElement.innerHTML = `
   <div class="city">
     <div>
       <h2>${cityName}</h2>
@@ -78,6 +78,3 @@ document.addEventListener("DOMContentLoaded", function () {
   citiesSelectElement.addEventListener("change", updateCity);
   console.log(citiesSelectElement);
 });
-
-updateTime();
-setInterval(updateTime, 1000);
