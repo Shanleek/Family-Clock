@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   function updateTime() {
-    //Bunbury
+    //Rockingham
     let rockinghamElement = document.querySelector("#rockingham");
     let rockinghamDateElement = rockinghamElement.querySelector(".date");
     let rockinghamTimeElement = rockinghamElement.querySelector(".time");
