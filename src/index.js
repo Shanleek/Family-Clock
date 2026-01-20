@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     bunburyDateElement.innerHTML = moment().format("MMMM Do YYYY");
     bunburyTimeElement.innerHTML = bunburyTime.format(
-      "hh:mm:ss[<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
 
     //Halifax
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     halifaxDateElement.innerHTML = moment().format("MMMM Do YYYY");
     halifaxTimeElement.innerHTML = halifaxTime.format(
-      "hh:mm:ss[<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
 
     //Charlotte
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     charlotteDateElement.innerHTML = moment().format("MMMM Do YYYY");
     charlotteTimeElement.innerHTML = charlotteTime.format(
-      "hh:mm:ss[<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
 
     //SanJuan
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     sanJuanDateElement.innerHTML = moment().format("MMMM Do YYYY");
     sanJuanTimeElement.innerHTML = sanJuanTime.format(
-      "hh:mm:ss[<small>]A[</small>]"
+      "h:mm:ss [<small>]A[</small>]"
     );
   }
 
